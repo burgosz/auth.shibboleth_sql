@@ -24,4 +24,6 @@ There are some additional setting:
   - Admin entitlement: Users with this entitlement will gain super admin access. Make sure that this is a valid entitlement, otherwise you can disable admin access.
   - Login Redirect: It must be: /plugins/auth.shibboleth_sql/login.php
 
+Edit the $REDIRECTURL parameter in plugins/auth.shibboleth_sql/login.php file, to fit the address of your Pydio web page.
+
 After this you should set up the Shibboleth, and Apache to require Shibboleth on your Pydio location.
