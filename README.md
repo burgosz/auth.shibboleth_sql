@@ -3,7 +3,7 @@
 This plugins works with the current release of Pydio, which is the 6.0.6.
 
 This is an authentication plugin for Pydio. The plugin uses Shibboleth to login the user.
-This plugin updates the existing users and creates the new one each time they login. The authentication and authorization must be done via an IdP and or an AAI.
+This plugin updates the existing users and creates the new one each time they login. The authentication and authorization must be done via an IdP and or an AA.
 
 For optimal working the Shibboleth should provide the following attributes to the Apache environment:
   - eppn: This will be the user id.
