@@ -22,7 +22,7 @@ Login to Pydio and in Settings menu select Application Core / Authentication. In
 There are some additional setting:
   - Logout Url: This is the logout location of your Shibboleth. (This is specific to your installation)
   - Admin entitlement: Users with this entitlement will gain super admin access. Make sure that this is a valid entitlement, otherwise you can disable admin access. (This is specific to your installation)
-  - Login Redirect: It must be: /plugins/auth.shibboleth_sql/login.php
+  - Login Redirect: It must be: /plugins/auth.shibboleth_sql/login.php (relative to your Pydio web page url)
 
 Edit the $REDIRECTURL parameter in plugins/auth.shibboleth_sql/login.php file, to fit the address of your Pydio web page.
 
