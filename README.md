@@ -20,7 +20,7 @@ $ git clone https://github.com/burgosz/auth.shibboleth_sql.git
 Login to Pydio and in Settings menu select Application Core / Authentication. In the Main Instance section there is a drop down named Instance Type, select Shibboleth authentication with DB.
 
 There are some additional setting:
-  - Logout Url: This is the logout location of your Shibboleth. (This is specific to your installation)
+  - Logout Url: This is the logout location of your Shibboleth. Full url. (This is specific to your installation)
   - Admin entitlement: Users with this entitlement will gain super admin access. Make sure that this is a valid entitlement, otherwise you can disable admin access. (This is specific to your installation)
   - Login Redirect: It must be: /plugins/auth.shibboleth_sql/login.php (relative to your Pydio web page url)
 
