@@ -77,7 +77,6 @@ if ($authPlug->getOption("SECRET") == "") {
 } else if ($secret != $authPlug->getOption("SECRET")) {
     $plugInAction = "WRONG_SECRET";
 }
-
 switch ($plugInAction) {
 case 'login':
     $login = $AJXP_GLUE_GLOBALS["login"];
@@ -155,6 +154,9 @@ case 'logout':
     global $_SESSION;
     $_SESSION = array();
     $result = TRUE;
+    $authdriver = ConfService::getAuthDriverImpl();
+    global $LOGOUT_REDIRECT;
+    $LOGOUT_REDIRECT = AJXP_VarsFilter::filter($authdriver->getOption("LOGOUT_URL"));
     break;
 case 'back':
     $newSession = new SessionSwitcher("AjaXplorer");
